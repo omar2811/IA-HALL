@@ -1,9 +1,8 @@
 import nextra from 'nextra'
-const withDocs = nextra({
+
+const withNextra = nextra({
   theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.jsx',
+  themeConfig: './theme.config.jsx'
 })
 
-export default withDocs({
-  reactStrictMode: true
-})
+export default withNextra()

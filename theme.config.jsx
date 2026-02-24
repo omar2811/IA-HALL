@@ -1,9 +1,28 @@
-export default {
+import React from 'react'
+
+const config = {
   logo: <span>RH México • Halliburton</span>,
-  project: { link: 'https://vercel.com' },
-  footer: { text: 'Recursos Humanos México — Halliburton' },
-  useNextSeoProps() {
-    return { titleTemplate: '%s – RH México' }
+
+  project: {
+    link: 'https://vercel.com'
   },
-  i18n: [{ locale: 'es', text: 'Español' }]
+
+  footer: {
+    text: 'Recursos Humanos México — Halliburton'
+  },
+
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – RH México'
+    }
+  },
+
+  i18n: [
+    {
+      locale: 'es',
+      text: 'Español'
+    }
+  ]
 }
+
+export default config
